@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.notes-app {
+  margin: 0 auto 10px auto;
+  padding: 15px;
+}
+
+/* STYLE NAVBAR */
+.notes-app_header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.notes-app_header h1 {
+  font-size: 32px;
+  flex: 1;
+}
+
+.title-navbar a {
+  color: white;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.navigation ul li a {
+  font-size: 30px;
+  color: white;
+}
+/* END STYLE NAVBAR */
+
+/* STYLE TITLE */
+.title-notes_app {
+  margin-left: 65px;
+  margin-bottom: 10px;
+}
+/* END STYLE TITLE */
+
+/* STYLE SEARCH BAR */
+.search-bar {
+  width: 90%;
+  display: flex;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+}
+/* END STYLE SEARCH BAR */
+
+/* STYLE NOTE LIST & BODY ITEM NOTE */
+.notes-list_active {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* float: left; */
+}
+
+.notes-item_body {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-top: 5px solid white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 270px;
+  max-width: 270px;
+  height: 220px;
+  padding: 10px;
+}
+
+.notes-item_title a {
+  font-size: 20px;
+  color: white;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notes-item_create {
+  color: grey;
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+.notes_item_body {
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notes-item-button_delete {
+  padding: 5px 20px 5px 20px;
+  font-weight: 600;
+  color: red;
+  background-color: black;
+  border: 1px solid white;
+  /* border-radius: 0 0 0 5px; */
+}
+
+.notes-item-button_delete:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.notes-item-button_archived {
+  padding: 5px 20px 5px 20px;
+  font-weight: 600;
+  background-color: black;
+  /* border-radius: 0 0 5px 0; */
+  color: orange;
+  border: 1px solid white;
+}
+
+.notes-item-button_archived:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+/* END STYLE NOTE LIST & ITEM NOTE */
+
+/* STYLE BTN ADD */
+.btn-add_note {
+  display: flex;
+  position: fixed;
+  right: 32px;
+  bottom: 50px;
+}
+
+.btn-add {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  font-size: 32px;
+}
+
+.btn-add a {
+  max-width: 32px;
+  max-height: 32px;
+  margin: 0 auto;
+  align-items: center;
+  color: black;
+}
+/* END STYLE BTN ADD */
+
+/* STYLE ADD PAGE */
+.notes-input {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.notes-input input {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: black;
+}
+
+.notes-input textarea {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  padding: 16px;
+  color: white;
+  font-family: "Poppins";
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.notes-input p {
+  font-size: 10px;
+  position: relative;
+  float: right;
+}
+
+.notes-input button {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: grey;
+  text-align: center;
+}
+
+.notes-input button:hover {
+  cursor: pointer;
+  background-color: white;
+  opacity: 0.8;
+}
+/* END STYLE ADD PAGE */
+
+/* STYLE DETAIL PAGE */
+.item-detail {
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.title-notes_detail {
+  font-size: 60px;
+}
+
+.create-notes_detail {
+  color: grey;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.body-notes_detail {
+  font-size: 20px;
+}
+/* END STYLE DETAIL PAGE */
+
+/* STYLE TEXT EMPTY */
+.text-empty {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* END STYLE TEXT EMPTY */
+
+/* .title-active {
+  margin-bottom: 20px;
+}
+
+.title-archive {
+  margin-bottom: 20px;
+} */
+
+/* .notes-list_archived {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+} */
